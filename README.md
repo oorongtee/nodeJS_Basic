@@ -21,5 +21,7 @@
 - API測試：Postman是個好東西
 - API資料模型，路由與測試
 - 可重用函式設計與全面錯誤管理
-- gitignore可防止檔案上傳到git上
 
+# 筆記
+- gitignore可防止檔案上傳到git上
+- 路由port設定很麻煩，以後要開專案前要先問gpt怎麼解決port的更新問題
