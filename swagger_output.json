@@ -1,0 +1,205 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "version": "1.0.0",
+    "title": "parrot api",
+    "description": "鸚鸚食堂 api"
+  },
+  "host": "localhost:3000",
+  "basePath": "/",
+  "tags": [
+    {
+      "name": "Parrot",
+      "description": "鸚鸚"
+    },
+    {
+      "name": "Info",
+      "description": "資訊"
+    },
+    {
+      "name": "Food",
+      "description": "食物"
+    },
+    {
+      "name": "Parrot",
+      "description": "鸚鸚"
+    },
+    {
+      "name": "Feedback",
+      "description": "回饋"
+    }
+  ],
+  "schemes": [
+    "http",
+    "https"
+  ],
+  "paths": {
+    "/": {
+      "get": {
+        "description": "",
+        "responses": {
+          "default": {
+            "description": ""
+          }
+        }
+      }
+    },
+    "/users/": {
+      "get": {
+        "description": "",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/feedbacks/": {
+      "post": {
+        "tags": [
+          "Feedback"
+        ],
+        "summary": "新增回饋",
+        "description": "新增回饋",
+        "parameters": [
+          {
+            "name": "body",
+            "in": "body",
+            "required": true,
+            "schema": {
+              "type": "object",
+              "properties": {
+                "contactPerson": {
+                  "type": "string",
+                  "example": "姓名"
+                },
+                "phone": {
+                  "type": "string",
+                  "example": "電話"
+                },
+                "email": {
+                  "type": "string",
+                  "example": "信箱"
+                },
+                "feedback": {
+                  "type": "string",
+                  "example": "內容"
+                },
+                "source": {
+                  "type": "string",
+                  "example": "從哪裡得知此網站"
+                }
+              },
+              "required": [
+                "contactPerson",
+                "phone",
+                "email",
+                "feedback",
+                "source"
+              ]
+            }
+          }
+        ],
+        "responses": {
+          "default": {
+            "description": ""
+          }
+        }
+      },
+      "get": {
+        "description": "",
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "404": {
+            "description": "Not Found"
+          }
+        }
+      }
+    },
+    "/feedbacks/{id}": {
+      "get": {
+        "description": "",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "404": {
+            "description": "Not Found"
+          }
+        }
+      },
+      "patch": {
+        "description": "",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "body",
+            "in": "body",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "contactPerson": {
+                  "example": "any"
+                },
+                "email": {
+                  "example": "any"
+                },
+                "feedback": {
+                  "example": "any"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "400": {
+            "description": "Bad Request"
+          },
+          "404": {
+            "description": "Not Found"
+          }
+        }
+      },
+      "delete": {
+        "description": "",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "400": {
+            "description": "Bad Request"
+          },
+          "404": {
+            "description": "Not Found"
+          }
+        }
+      }
+    }
+  }
+}

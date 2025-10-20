@@ -1,0 +1,62 @@
+[
+    {
+        "name": "向日葵籽",
+        "calories": 584,
+        "protein": 20.78,
+        "fat": 51.46,
+        "carbs": 20,
+        "maxIntake": 10,
+        "note": "生食",
+        "nutrition": "向日葵籽富含健康脂肪、蛋白質及纖維，有助於心血管健康和提供長時間的能量。"
+    },
+    {
+        "name": "南瓜籽",
+        "calories": 559,
+        "protein": 30.23,
+        "fat": 49.05,
+        "carbs": 10.71,
+        "maxIntake": 10,
+        "note": "生食",
+        "nutrition": "南瓜籽含有豐富的鋅、鐵和抗氧化劑，有助於增強免疫系統和促進骨骼健康。"
+    },
+    {
+        "name": "蘋果",
+        "calories": 52,
+        "protein": 0.26,
+        "fat": 0.17,
+        "carbs": 13.81,
+        "maxIntake": 20,
+        "note": "生食，去核",
+        "nutrition": "蘋果含有豐富的維他命C、纖維和抗氧化劑，有助於提高免疫力和促進消化健康。"
+    },
+    {
+        "name": "胡蘿蔔",
+        "calories": 41,
+        "protein": 0.93,
+        "fat": 0.24,
+        "carbs": 9.58,
+        "maxIntake": 15,
+        "note": "生食或煮熟食用",
+        "nutrition": "胡蘿蔔富含β-胡蘿蔔素和維他命A，有助於改善視力和促進皮膚健康。"
+    },
+    {
+        "name": "杏仁",
+        "calories": 579,
+        "protein": 21.15,
+        "fat": 49.93,
+        "carbs": 21.55,
+        "maxIntake": 5,
+        "note": "生食或輕微烘烤後食用",
+        "nutrition": "杏仁富含維他命E、健康脂肪和蛋白質，有助於降低膽固醇和增強大腦功能。"
+    },
+    {
+        "name": "花生",
+        "calories": 567,
+        "protein": 25.8,
+        "fat": 49.24,
+        "carbs": 16.13,
+        "maxIntake": 10,
+        "note": "生食或輕微烘烤後食用",
+        "nutrition": "花生含有豐富的蛋白質、健康脂肪和纖維，有助於促進心臟健康和提供持久能量。"
+    }
+]
