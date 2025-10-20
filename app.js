@@ -4,6 +4,16 @@ var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 
+const cors = require('cors');// 引入 CORS 套件
+
+// 將 .env 檔案中的變數載入到 process.env 中
+const dotenv = require("dotenv");
+dotenv.config({ path: "./config.env" });
+console.log(process.env.DB_HOST); // 從 process.env 中讀取並打印 DB_HOST 變數的值 // 這邊會得到 localhost
+
+const { v4: uuidv4 } = require('uuid');
+console.log(uuidv4()); // 輸出類似：'1b9d6bcd-bbfd-4b2d-9b5d-ab8dfbbd4bed'
+
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 
